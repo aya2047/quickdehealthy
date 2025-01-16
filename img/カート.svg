@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.02 35.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3a322e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #3a322e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="_アートボード1" data-name="アートボード1">
+    <polygon class="cls-1" points="36.93 22.01 12.49 22.01 9.52 6.01 39.02 9.97 36.93 22.01"/>
+    <polyline class="cls-2" points="35.5 26.72 12.31 26.72 8.1 1 1 1"/>
+    <circle class="cls-2" cx="17.9" cy="31.9" r="2.89"/>
+    <circle class="cls-2" cx="30.57" cy="31.9" r="2.89"/>
+  </g>
+</svg>

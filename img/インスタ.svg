@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.99 32.99">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 3.41px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-width: 2.91px;
+      }
+    </style>
+  </defs>
+  <g id="_アートボード1" data-name="アートボード1">
+    <g>
+      <rect class="cls-2" x="1" y="1" width="30.99" height="30.99" rx="7.27" ry="7.27"/>
+      <circle class="cls-3" cx="16.49" cy="16.49" r="6.64"/>
+      <circle class="cls-1" cx="26.09" cy="7.89" r=".85"/>
+    </g>
+  </g>
+</svg>

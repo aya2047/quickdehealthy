@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICKdeHEALTHY</title>
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteinar">
+        <header>
+            <div class="flexbox header-inner">
+                <button class="sp-btn"><span></span><span></span><span></span></button>
+                <img src="img/ロゴ.svg" alt="クイックでヘルシー">
+                <div class="flexbox">
+                    <img src="img/お気に入り.svg" alt="お気に入りボタン">
+                    <img src="img/カート.svg" alt="カートボタン">
+                </div>
+            </div>
+        </header>
+        <div class="bunner-fixed">
+            <p>今なら3,000円以上お買い上げで<strong>送料無料！</strong></p>
+        </div>
+        <div class="flexbox main-conteinar">
+            <aside>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">人気商品</a>
+                        </li>
+                        <li>
+                            <a href="#">まずはこれ</a>
+                        </li>
+                        <li>
+                            <a href="#">料理</a>
+                        </li>
+                        <li>
+                            <a href="#">スイーツ</a>
+                        </li>
+                        <li>
+                            <a href="#">トースト</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">ニュース</a>
+                        </li>
+                        <li>
+                            <a href="#">私たちについて</a>
+                        </li>
+                        <li>
+                            <a href="#">お店概要</a>
+                        </li>
+                        <ul class="aside-sns">
+                            <li>
+                                <a href="#">
+                                    <img src="img/インスタ.svg" alt="インスタグラムリンクボタン">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/ようつべ.svg" alt="ユーチューブリンクボタン">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <ul id="variable-width">
+                    <li><a href="#"><img src="img/配送料無料.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/料理バナー.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/スイーツバナー.png" alt=""></a></li>
+                </ul>
+                <div id="main-contents-1">
+                    <h2 class="h2-bf h2-1">人気商品</h2>
+                    <div class="flexbox">
+                        <figure>
+                            <img src="img/料理画像/鶏むね南蛮.jpg" alt="鶏胸肉とレンコンの南蛮漬けの写真">
+                            <figcaption>
+                                <p>鶏胸肉とれんこんの南蛮漬け</p>
+                                <p>¥1,200(税込)</p>
+                                <p>鶏胸肉とれんこんで食べ応えがありながら、南蛮漬けにすることであっさりとヘルシーに仕上げました。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/purin.jpg" alt="ココアプリンの写真">
+                            <figcaption>
+                                <p>ココアプリン</p>
+                                <p>¥700(税込)</p>
+                                <p>甘さ控えめなココアプリン。ココアの層と牛乳の層があり、両方の味わいを楽しめます。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/明太子トースト.jpg" alt="明太子しらすトーストの写真">
+                            <figcaption>
+                                <p>明太子しらすトースト</p>
+                                <p>¥450(税込)</p>
+                                <p>相性抜群な明太子としらすの組み合わせがクセになるトーストです。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+    
+                <div id="main-contents-2">
+                    <h2 class="h2-bf h2-2">まずはこれ</h2>
+                    <div class="flexbox">
+                        <figure>
+                            <img src="img/料理画像/クッキー.jpg" alt="全粒粉クッキーの写真">
+                            <figcaption>
+                                <p>全粒粉クッキー</p>
+                                <p>¥700(税込)</p>
+                                <p>全粒粉で作られたヘルシーなクッキーです。素朴な味わいで全粒粉ならではのサクッとした食感が楽しめます。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/ハンバーグ.jpg" alt="鶏ひき肉の和風ハンバーグの写真">
+                            <figcaption>
+                                <p>鶏ひき肉の和風ハンバーグ</p>
+                                <p>¥1,100(税込)</p>
+                                <p>高タンパクで低カロリーな和風ハンバーグです。鶏ひき肉ならではのふっくらとした仕上がりになっています。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/ピザトースト2.jpg" alt="さばピザトーストの写真">
+                            <figcaption>
+                                <p>さばピザトースト</p>
+                                <p>¥400(税込)</p>
+                                <p>忙しい朝にもピッタリなボリューミーピザトースト。エネルギーが不足しがちな朝に美味しく活力を養うことができます。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+    
+                <div id="main-contents-3">
+                    <h2 class="h2-bf h2-3">料理</h2>
+                    <div class="flexbox">
+                        <figure>
+                            <img src="img/料理画像/鶏むね南蛮.jpg" alt="鶏胸肉とレンコンの南蛮漬けの写真">
+                            <figcaption>
+                                <p>鶏胸肉とれんこんの南蛮漬け</p>
+                                <p>¥1,200(税込)</p>
+                                <p>鶏胸肉とれんこんで食べ応えがありながら、南蛮漬けにすることであっさりとヘルシーに仕上げました。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/ハンバーグ.jpg" alt="鶏ひき肉の和風ハンバーグの写真">
+                            <figcaption>
+                                <p>鶏ひき肉の和風ハンバーグ</p>
+                                <p>¥1,100(税込)</p>
+                                <p>高タンパクで低カロリーな和風ハンバーグです。鶏ひき肉ならではのふっくらとした仕上がりになっています。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/人参.jpg" alt="人参と粒マスタードのデリ風マリネの写真">
+                            <figcaption>
+                                <p>人参と粒マスタードのデリ風マリネ</p>
+                                <p>¥700(税込)</p>
+                                <p>酸味の控えめな人参のマリネです。お弁当のおかずやサンドイッチに挟んでも美味しくお召し上がりいただけます。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+    
+                <div id="main-contents-4">
+                    <h2 class="h2-bf h2-4">スイーツ</h2>
+                    <div class="flexbox">
+                        <figure>
+                            <img src="img/料理画像/クッキー.jpg" alt="全粒粉クッキーの写真">
+                            <figcaption>
+                                <p>全粒粉クッキー</p>
+                                <p>¥700(税込)</p>
+                                <p>全粒粉で作られたヘルシーなクッキーです。素朴な味わいで全粒粉ならではのサクッとした食感が楽しめます。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/purin.jpg" alt="ココアプリンの写真">
+                            <figcaption>
+                                <p>ココアプリン</p>
+                                <p>¥700(税込)</p>
+                                <p>甘さ控えめなココアプリン。ココアの層と牛乳の層があり、両方の味わいを楽しめます。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/ヨーグルトアイス.jpg" alt="ヨーグルトアイスの写真">
+                            <figcaption>
+                                <p>ヨーグルトアイス</p>
+                                <p>¥800(税込)</p>
+                                <p>ヨーグルトで作られたあっさりとしたアイス。ベリーやナッツがトッピングされており、食べやすいように一口サイズにしました。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+    
+                <div id="main-contents-5">
+                    <h2 class="h2-bf h2-5">トースト</h2>
+                    <div class="flexbox">
+                        <figure>
+                            <img src="img/料理画像/ピザトースト2.jpg" alt="さばピザトーストの写真">
+                            <figcaption>
+                                <p>さばピザトースト</p>
+                                <p>¥400(税込)</p>
+                                <p>忙しい朝にもピッタリなボリューミーピザトースト。エネルギーが不足しがちな朝に美味しく活力を養うことができます。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/明太子トースト.jpg" alt="明太子しらすトーストの写真">
+                            <figcaption>
+                                <p>明太子しらすトースト</p>
+                                <p>¥450(税込)</p>
+                                <p>相性抜群な明太子としらすの組み合わせがクセになるトーストです。</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/料理画像/フルーツトースト.jpg" alt="フルーツトーストの写真">
+                            <figcaption>
+                                <p>フルーツトースト</p>
+                                <p>¥400(税込)</p>
+                                <p>クリームチーズが塗られた、ベリーとバナナのデザートトーストです。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="about-bg">
+                    <p>時短で、おいしく、ヘルシーに</p>
+                    <p>「ヘルシーでおいしい料理が食べたいけど、調理や買い物、献立を考える手間をはぶきたい！」</p>
+                    <p>そんな方に向けた冷凍食品などを販売するサイトです。調理はレンジ加熱、ボイルなど簡単に時短で終わらせることができます。</p>
+                    <p>また、低カロリーでダイエットをしている方に特におすすめです。味気なくなってしまいがちなダイエット食品をおいしく召し上がっていただけるように様々な料理を揃えております。</p>
+                </div>
+                <div>
+                    <h2>ニュース</h2>
+                    <div class="flexbox main-scroll">
+                        <figure>
+                            <img src="img/配送料無料-2.png" alt="">
+                            <figcaption>
+                                送料無料キャンペーン実施中！<br>
+                                <span>0000.00.00</span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/アレンジレシピ.png" alt="">
+                            <figcaption>
+                                スタッフおすすめアレンジレシピ３選<br>
+                                <span>0000.00.00</span>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/ニュースデフォルト.svg" alt="">
+                            <figcaption>
+                                配送料値上げのお知らせ<br>
+                                <span>0000.00.00</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <p>すべて見る</p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <img src="img/ロゴ.svg" alt="">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#main-contents-1">人気商品</a>
+                    </li>
+                    <li>
+                        <a href="#main-contents-2">まずはこれ</a>
+                    </li>
+                    <li>
+                        <a href="#main-contents-3">料理</a>
+                    </li>
+                    <li>
+                        <a href="#main-contents-4">スイーツ</a>
+                    </li>
+                    <li>
+                        <a href="#main-contents-5">トースト</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">私たちについて</a></li>
+                    <li><a href="#">ニュース</a></li>
+                    <li><a href="#">よくあるご質問</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">配送・決済について</a></li>
+                    <li><a href="#">特定商取引法に基づく表記</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <p>©️2024 QUICKdeHEALTHY all rights reserved.</p>
+        </footer>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

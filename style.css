@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+html,body{
+    margin: 0;
+    padding: 0;
+    color: #3a322e;
+    font-size: 16px;
+    font-family: "ヒラギノ丸ゴ ProN W4";
+}
+li{
+    list-style-type: none;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+figcaption{
+    caption-side: bottom;
+    display: table-caption;
+}
+a{
+    color: #3a322e;
+    text-decoration: none;
+}
+.conteinar{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.flexbox{
+    display: flex;
+}
+/* ヘッダー */
+.header-inner{
+    justify-content: space-between;
+    height: 20vh;
+    padding: 0 50px;
+}
+.header-inner>img{
+    width: 10vw;
+}
+.header-inner>div>img{
+    width: 3vw;
+    margin-right: 10px;
+}
+.sp-btn{
+    opacity: 0;
+    width: 50px;
+}
+.bunner-fixed{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #d67f53;
+}
+
+/* メインコンテナ */
+
+/* サイドメニューバー */
+aside{
+    width: 600px;
+    height: 100vh;
+}
+.aside-sns{
+    padding: 0;
+    display: flex;
+}
+.aside-sns li{
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+}
+/* メイン */
+.h2-bf::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0 10px 10px 0;
+}
+.h2-1::before{
+    background: url(img/人気商品.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.h2-2::before{
+    background: url(img/mazuhakore.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.h2-3::before{
+    background: url(img/料理.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+}
+.h2-4::before{
+    background: url(img/スイーツ.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.h2-5::before{
+    background: url(img/トースト.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+figure img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.flexbox figure:nth-child(2){
+    margin: 0 20px;
+}
+.main-scroll{
+    overflow: auto;
+}
+#variable-width{
+    max-width: calc(100vw - 20vw);
+}
+#variable-width li:nth-child(4) img{
+    padding-right: 36px;
+}
+
+.about-bg{
+    color: #fff;
+    background: url(img/about-bg.png) no-repeat;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+}
