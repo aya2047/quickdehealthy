@@ -7,45 +7,48 @@
     <!-- jQueryの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slickの読み込み -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- google fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="A(more)ModernCSSReset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="conteinar">
+        <div class="openbtn"><span></span><span></span><span></span></div>
         <header>
             <div class="flexbox header-inner">
-                <button class="sp-btn"><span></span><span></span><span></span></button>
-                <img src="img/ロゴ.svg" alt="クイックでヘルシー">
+                <div class="fake"></div>
+                <img src="img/ロゴ.png" alt="クイックでヘルシー">
                 <div class="flexbox">
-                    <img src="img/お気に入り.svg" alt="お気に入りボタン">
+                    <img src="img/お気に入り.png" alt="お気に入りボタン">
                     <img src="img/カート.svg" alt="カートボタン">
                 </div>
             </div>
         </header>
-        <div class="bunner-fixed">
-            <p>今なら3,000円以上お買い上げで<strong>送料無料！</strong></p>
-        </div>
-        <div class="flexbox main-conteinar">
-            <aside>
+            <p class="bunner-fixed">今なら3,000円以上お買い上げで<strong>送料無料！</strong></p>
+        <div>
+            <aside id="g-nav">
                 <div>
                     <ul>
                         <li>
-                            <a href="#">人気商品</a>
+                            <a href="#main-contents-1">人気商品</a>
                         </li>
                         <li>
-                            <a href="#">まずはこれ</a>
+                            <a href="#main-contents-2">まずはこれ</a>
                         </li>
                         <li>
-                            <a href="#">料理</a>
+                            <a href="#main-contents-3">料理</a>
                         </li>
                         <li>
-                            <a href="#">スイーツ</a>
+                            <a href="#main-contents-4">スイーツ</a>
                         </li>
                         <li>
-                            <a href="#">トースト</a>
+                            <a href="#main-contents-5">トースト</a>
                         </li>
                     </ul>
                 </div>
@@ -77,18 +80,19 @@
             </aside>
             <main>
                 <ul id="variable-width">
-                    <li><a href="#"><img src="img/配送料無料.png" alt=""></a></li>
-                    <li><a href="#"><img src="img/料理バナー.png" alt=""></a></li>
-                    <li><a href="#"><img src="img/スイーツバナー.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/配送料無料.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/料理バナー.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/スイーツバナー.jpg" alt=""></a></li>
                 </ul>
                 <div id="main-contents-1">
                     <h2 class="h2-bf h2-1">人気商品</h2>
-                    <div class="flexbox">
+                    <div class="flexbox main-scroll">
                         <figure>
                             <img src="img/料理画像/鶏むね南蛮.jpg" alt="鶏胸肉とレンコンの南蛮漬けの写真">
                             <figcaption>
                                 <p>鶏胸肉とれんこんの南蛮漬け</p>
                                 <p>¥1,200(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>鶏胸肉とれんこんで食べ応えがありながら、南蛮漬けにすることであっさりとヘルシーに仕上げました。</p>
                             </figcaption>
                         </figure>
@@ -97,6 +101,7 @@
                             <figcaption>
                                 <p>ココアプリン</p>
                                 <p>¥700(税込)</p>
+                                <p class="tag-reito tag-reizo">チルド</p>
                                 <p>甘さ控えめなココアプリン。ココアの層と牛乳の層があり、両方の味わいを楽しめます。</p>
                             </figcaption>
                         </figure>
@@ -105,6 +110,7 @@
                             <figcaption>
                                 <p>明太子しらすトースト</p>
                                 <p>¥450(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>相性抜群な明太子としらすの組み合わせがクセになるトーストです。</p>
                             </figcaption>
                         </figure>
@@ -113,12 +119,13 @@
     
                 <div id="main-contents-2">
                     <h2 class="h2-bf h2-2">まずはこれ</h2>
-                    <div class="flexbox">
+                    <div class="flexbox main-scroll">
                         <figure>
                             <img src="img/料理画像/クッキー.jpg" alt="全粒粉クッキーの写真">
                             <figcaption>
                                 <p>全粒粉クッキー</p>
                                 <p>¥700(税込)</p>
+                                <p class="tag-reito tag-jouon">常温</p>
                                 <p>全粒粉で作られたヘルシーなクッキーです。素朴な味わいで全粒粉ならではのサクッとした食感が楽しめます。</p>
                             </figcaption>
                         </figure>
@@ -127,6 +134,7 @@
                             <figcaption>
                                 <p>鶏ひき肉の和風ハンバーグ</p>
                                 <p>¥1,100(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>高タンパクで低カロリーな和風ハンバーグです。鶏ひき肉ならではのふっくらとした仕上がりになっています。</p>
                             </figcaption>
                         </figure>
@@ -135,6 +143,7 @@
                             <figcaption>
                                 <p>さばピザトースト</p>
                                 <p>¥400(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>忙しい朝にもピッタリなボリューミーピザトースト。エネルギーが不足しがちな朝に美味しく活力を養うことができます。</p>
                             </figcaption>
                         </figure>
@@ -143,12 +152,13 @@
     
                 <div id="main-contents-3">
                     <h2 class="h2-bf h2-3">料理</h2>
-                    <div class="flexbox">
+                    <div class="flexbox main-scroll">
                         <figure>
                             <img src="img/料理画像/鶏むね南蛮.jpg" alt="鶏胸肉とレンコンの南蛮漬けの写真">
                             <figcaption>
                                 <p>鶏胸肉とれんこんの南蛮漬け</p>
                                 <p>¥1,200(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>鶏胸肉とれんこんで食べ応えがありながら、南蛮漬けにすることであっさりとヘルシーに仕上げました。</p>
                             </figcaption>
                         </figure>
@@ -157,6 +167,7 @@
                             <figcaption>
                                 <p>鶏ひき肉の和風ハンバーグ</p>
                                 <p>¥1,100(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>高タンパクで低カロリーな和風ハンバーグです。鶏ひき肉ならではのふっくらとした仕上がりになっています。</p>
                             </figcaption>
                         </figure>
@@ -165,6 +176,7 @@
                             <figcaption>
                                 <p>人参と粒マスタードのデリ風マリネ</p>
                                 <p>¥700(税込)</p>
+                                <p class="tag-reito tag-reizo">チルド</p>
                                 <p>酸味の控えめな人参のマリネです。お弁当のおかずやサンドイッチに挟んでも美味しくお召し上がりいただけます。</p>
                             </figcaption>
                         </figure>
@@ -173,12 +185,13 @@
     
                 <div id="main-contents-4">
                     <h2 class="h2-bf h2-4">スイーツ</h2>
-                    <div class="flexbox">
+                    <div class="flexbox main-scroll">
                         <figure>
                             <img src="img/料理画像/クッキー.jpg" alt="全粒粉クッキーの写真">
                             <figcaption>
                                 <p>全粒粉クッキー</p>
                                 <p>¥700(税込)</p>
+                                <p class="tag-reito tag-jouon">常温</p>
                                 <p>全粒粉で作られたヘルシーなクッキーです。素朴な味わいで全粒粉ならではのサクッとした食感が楽しめます。</p>
                             </figcaption>
                         </figure>
@@ -187,6 +200,7 @@
                             <figcaption>
                                 <p>ココアプリン</p>
                                 <p>¥700(税込)</p>
+                                <p class="tag-reito tag-reizo">チルド</p>
                                 <p>甘さ控えめなココアプリン。ココアの層と牛乳の層があり、両方の味わいを楽しめます。</p>
                             </figcaption>
                         </figure>
@@ -195,6 +209,7 @@
                             <figcaption>
                                 <p>ヨーグルトアイス</p>
                                 <p>¥800(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>ヨーグルトで作られたあっさりとしたアイス。ベリーやナッツがトッピングされており、食べやすいように一口サイズにしました。</p>
                             </figcaption>
                         </figure>
@@ -203,12 +218,13 @@
     
                 <div id="main-contents-5">
                     <h2 class="h2-bf h2-5">トースト</h2>
-                    <div class="flexbox">
+                    <div class="flexbox main-scroll">
                         <figure>
                             <img src="img/料理画像/ピザトースト2.jpg" alt="さばピザトーストの写真">
                             <figcaption>
                                 <p>さばピザトースト</p>
                                 <p>¥400(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>忙しい朝にもピッタリなボリューミーピザトースト。エネルギーが不足しがちな朝に美味しく活力を養うことができます。</p>
                             </figcaption>
                         </figure>
@@ -217,6 +233,7 @@
                             <figcaption>
                                 <p>明太子しらすトースト</p>
                                 <p>¥450(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>相性抜群な明太子としらすの組み合わせがクセになるトーストです。</p>
                             </figcaption>
                         </figure>
@@ -225,18 +242,21 @@
                             <figcaption>
                                 <p>フルーツトースト</p>
                                 <p>¥400(税込)</p>
+                                <p class="tag-reito">冷凍</p>
                                 <p>クリームチーズが塗られた、ベリーとバナナのデザートトーストです。</p>
                             </figcaption>
                         </figure>
                     </div>
                 </div>
                 <div class="about-bg">
+                    <div class="about-contents">
                     <p>時短で、おいしく、ヘルシーに</p>
                     <p>「ヘルシーでおいしい料理が食べたいけど、調理や買い物、献立を考える手間をはぶきたい！」</p>
                     <p>そんな方に向けた冷凍食品などを販売するサイトです。調理はレンジ加熱、ボイルなど簡単に時短で終わらせることができます。</p>
                     <p>また、低カロリーでダイエットをしている方に特におすすめです。味気なくなってしまいがちなダイエット食品をおいしく召し上がっていただけるように様々な料理を揃えております。</p>
+                    </div>
                 </div>
-                <div>
+                <div class="news">
                     <h2>ニュース</h2>
                     <div class="flexbox main-scroll">
                         <figure>
@@ -261,12 +281,12 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <p>すべて見る</p>
+                    <a href="#">すべて見る</a>
                 </div>
             </main>
         </div>
         <footer>
-            <img src="img/ロゴ.svg" alt="">
+            <img src="img/ロゴ.png" alt="">
             <div class="footer-menu">
                 <ul>
                     <li>
